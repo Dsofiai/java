@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo de Persona</title>
+</head>
+<body>
+    <h1>Información de Persona</h1>
+    <p id="saludo">Texto de prueba</p> <!-- Pon texto de prueba aquí -->
+    <script>
+        const persona = {
+            nombre: "Juan",
+            edad: 30,
+        };
+        console.log("El script está funcionando");
+        document.getElementById("saludo").textContent = persona.nombre;
+    </script>
+</body>
+</html>
