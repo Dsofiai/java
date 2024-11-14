@@ -7,14 +7,18 @@
 </head>
 <body>
     <h1>Información de Persona</h1>
-    <p id="saludo">Texto de prueba</p> <!-- Pon texto de prueba aquí -->
+    <p id="saludo">Este es un texto de prueba que será reemplazado</p> <!-- Texto de prueba aquí -->
+    
     <script>
         const persona = {
             nombre: "Juan",
             edad: 30,
         };
+        
         console.log("El script está funcionando");
-        document.getElementById("saludo").textContent = persona.nombre;
+        
+        // Usando substring para mostrar solo una parte del nombre
+        document.getElementById("saludo").textContent = persona.nombre.substring(0, 2);
     </script>
 </body>
 </html>
